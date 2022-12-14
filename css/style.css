@@ -1018,12 +1018,13 @@ hr {
   display: inline-block;
   vertical-align: middle;
   border: 1px solid #EAF2FF;
-  border-radius: 13px;
-  padding: 8px 15px;
-  font-size: 15px;
+  border-radius: 30px;
+  padding: 4px 12px;
+  font-size: 12px;
   text-transform: uppercase;
-  margin-bottom: 12px;
-  margin-right: 6px;
+  margin-bottom: 7px;
+  margin-right: 3px;
+  font-weight: 500;
 }
 .ingradientsCard > ul > li.primaryBorderColor {
   border-color: #219653;
@@ -1047,6 +1048,39 @@ hr {
 .orderBtn .btn > span > img {
   margin-right: 10px;
 }
+.pannelContent {
+  display: none;
+}
+.orderTableCol.pannelBodyheader {
+  padding-right: 60px;
+  position: relative;
+}
+.orderTableCol.pannelBodyheader::before {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 2px solid var(--darkColor);
+  border-left: 2px solid var(--darkColor);
+  transition: all 250ms ease-in-out;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+/*  pointer-events: none;*/
+  cursor: pointer;
+}
+.actAccordion .orderTableCol.pannelBodyheader::before {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  top: 21px;
+}
+
+
 
 /*********** my-order-2 page end **********/
 
@@ -1193,7 +1227,6 @@ hr {
 /*********** confirmation popup end ***********/
 
 .emailFormCol {
-  margin-top: 18px;
   position: relative;
 }
 .form-control {
@@ -1223,18 +1256,19 @@ hr {
   right: 26px;
   padding: 0;
   top: 50%;
-    -webkit-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  text-align: center;
 }
-
-.moretext {
-  display: none;
+.sendEmail > span {
+  display: block;
+  color: #959595;
+  text-transform: uppercase;
+  font-size: 12px;
 }
-a.moreless-button {
-  color: var(--darkColor);
-  font-size: 14px;
-  font-weight: var(--sBold);
+.sendEmail > span + span {
+  margin-top: 2px;
 }
 .tableOrderHeader {
   position: relative;
@@ -1256,7 +1290,36 @@ a.moreless-button {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
+.formCardPayment {
+  margin-top: 20px;
+}
+.formCardPayment > label {
+  color: var(--darkColor);
+  font-size: 16px;
+  font-weight: var(--bold);
+  padding-bottom: 10px;
+}
+.emailFormCol .form-control {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 24px 85px 24px 72px;
+}
+.emailIcon {
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  top: 25px;
+}
+.emailFormCol::before {
+  content: "";
+  position: absolute;
+  right: 80px;
+  top: 0;
+  bottom: 0;
+  background-color: #EAF2FF;
+  width: 1px;
+  z-index: 1;
+}
 
 
 /*******************************
@@ -1412,13 +1475,6 @@ a.moreless-button {
   .orderBtn .btn > span > img {
     width: 20px;
   }
-  .ingradientsCard > ul > li {
-    font-size: 14px;
-    margin-bottom: 8px;
-    margin-right: 2px;
-    border-radius: 10px;
-    padding: 6px 10px;
-  }
   .orderBtn .btn > span > img {
     margin-right: 5px;
   }
@@ -1459,6 +1515,13 @@ a.moreless-button {
   }
   .orderBtn .btn {
     font-size: 18px;
+  }
+  .emailFormCol .form-control {
+    padding: 20px 85px 20px 55px;
+  }
+  .emailIcon {
+    left: 22px;
+    top: 21px;
   }
 }
 

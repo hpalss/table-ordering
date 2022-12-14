@@ -66,11 +66,9 @@ function formatCardNumber(value) {
 }
 
 
-$('.moreless-button').click(function() {
-  $('.moretext').slideToggle();
-  if ($('.moreless-button').text() == "Read more") {
-    $(this).text("Read less")
-  } else {
-    $(this).text("Read more")
-  }
+$(".pannelBodyheader").click(function(){
+  $(this).parents('.pannelBody').find('.pannelContent').slideToggle();
+  $(this).parents('.pannelBody').siblings().find('.pannelContent').slideUp();
+  $(this).parents('.pannelBody').toggleClass('actAccordion');
+  $(this).parents('.pannelBody').siblings().removeClass('actAccordion');
 });
