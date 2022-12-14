@@ -1059,7 +1059,7 @@ hr {
   content: "";
   position: absolute;
   right: 30px;
-  top: 25px;
+  top: 16px;
   width: 10px;
   height: 10px;
   background: transparent;
@@ -1067,17 +1067,18 @@ hr {
   border-top: 2px solid var(--darkColor);
   border-left: 2px solid var(--darkColor);
   transition: all 250ms ease-in-out;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+
+    -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 /*  pointer-events: none;*/
   cursor: pointer;
 }
 .actAccordion .orderTableCol.pannelBodyheader::before {
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-  top: 21px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 22px;
 }
 
 
