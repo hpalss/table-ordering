@@ -1,3 +1,15 @@
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 30) {
+      $(".headerSection").addClass("fixedHeader");
+    } else {
+      $(".headerSection").removeClass("fixedHeader");
+    }
+  });
+});
+
+
+
 // topLinks
 var swiper = new Swiper(".topLinksSwiper", {
   slidesPerView: "auto",

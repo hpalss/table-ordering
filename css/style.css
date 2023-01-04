@@ -71,6 +71,10 @@ a:hover, a:focus, .btn:focus {
   text-align: center;
   min-height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 80px;
 }
 .pageBgCol::before {
   content: "";
@@ -81,21 +85,77 @@ a:hover, a:focus, .btn:focus {
   bottom: 0;
   background-color: rgba(6,5,5,0.5);
 }
-.scanQrIcon {
-  padding-bottom: 30px;
+.tapText {
+  padding-bottom: 40px;
+}
+.tapText > span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: 700;
+}
+.tapText > span + span {
+  margin-left: 12px;
+}
+.tapText > span > img {
+  width: 26px;
+}
+.orText {
+  position: relative;
+  margin-bottom: 24px;
+}
+.orText > span {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 50%;
+  font-weight: 700;
+  position: relative;
+}
+.orText > span::before, .orText > span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 81px;
+  height: 1px;
+  background-color: #fff;
+}
+.orText > span::before {
+  left: -43px;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.orText > span::after {
+  right: -43px;
+  -webkit-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
 }
 .pageInner {
-  padding: 30px 15px 120px;
   position: relative;
   z-index: 2;
 }
 .pageInner h1 {
-  font-size: 27px;
+  font-size: 19px;
   font-weight: var(--bold);
   margin-bottom: 20px;
 }
-.splashBotomText {
-  padding-bottom: 12px;
+.splashBotmCol > ul > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.splashBotmCol > ul > li + li {
+  margin-left: 24px;
+}
+.splashBotmLogo > a {
+  display: block;
+  width: 127px;
 }
 .splashBotomText > span {
   font-size: 13px;
@@ -110,7 +170,7 @@ a:hover, a:focus, .btn:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 15px 20px 30px 20px;
+  padding: 15px;
 }
 .btnStyle {
   display: inline-block;
@@ -143,7 +203,7 @@ a:hover, a:focus, .btn:focus {
   padding-left: 8px;
 }
 .pageTopCol {
-  padding: 22px 0 15px;
+  padding: 15px 0;
 }
 .backTriggerCol {
   line-height: 1;
@@ -159,7 +219,7 @@ a:hover, a:focus, .btn:focus {
 }
 .topLinksCol {
   overflow: hidden;
-  padding: 5px;
+  padding: 5px 5px 0;
 }
 .topLinksSwiper .swiper-slide {
   width: auto;
@@ -238,7 +298,7 @@ a:hover, a:focus, .btn:focus {
   opacity: 0;
 }
 .tabSectionMain {
-  padding: 15px 0;
+  padding: 118px 0 15px;
   position: relative;
   z-index: 2;
 }
@@ -283,7 +343,9 @@ a:hover, a:focus, .btn:focus {
   margin-top: -20px;
 }
 .proBtmBtnCol .btn {
-  min-width: 88px;
+  min-width: 82px;
+  padding: 10px 10px;
+  border-radius: 10px;
 }
 .btn {
   padding: 8px 20px 10px;
@@ -339,12 +401,10 @@ a:hover, a:focus, .btn:focus {
 .proRightIconsCol li + li {
   padding-top: 8px;
 }
-.cs1ContentCol .proOptionsList {
-  padding: 4px 0;
-}
 .cardProtitle {
   font-size: 16px;
   font-weight: var(--bold);
+  margin-bottom: 0;
 }
 .proOptionsList > ul > li {
   display: inline-block;
@@ -358,6 +418,9 @@ a:hover, a:focus, .btn:focus {
 }
 .cs1ContentCol, .proRightIconsCol {
   padding-bottom: 15px;
+}
+.proOptionsList > ul > li > img {
+  width: 18px;
 }
 .proOptionsList img {
   -webkit-filter: grayscale(1);
@@ -857,7 +920,7 @@ hr {
   background-color: var(--bs-white);
 }
 .formSection {
-  padding-top: 60px;
+  padding: 50px 15px 0;
 }
 .formCol + .formCol {
   margin-top: 15px;
@@ -879,7 +942,7 @@ hr {
   text-align: center;
   font-weight: var(--sBold);
   font-size: 26px;
-  margin-left: -50px;
+  padding-right: 50px;
 }
 .gradientText {
   background: linear-gradient(to right, #FD8B70 0%, #F04F26 100%);
@@ -993,8 +1056,8 @@ hr {
 
 /*********** my-order-2 page start **********/
 
-.signleOrderMainCol {
-  margin-top: 30px;
+.singleOrderMainCol {
+  margin-top: 100px;
 }
 .orderDetailCol {
   margin-top: 30px;
@@ -1090,7 +1153,7 @@ hr {
 .proDetailText {
     font-size: 15px;
     color: #333951;
-    text-transform: uppercase;
+    text-transform: capitalize;
     position: relative;
     padding-left: 25px;
 }
@@ -1134,7 +1197,7 @@ hr {
     padding-left: 26px;
     font-size: 15px;
     color: #333951;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .sizeSelector .radio input[type=radio] {
   position: absolute;
@@ -1166,7 +1229,7 @@ hr {
 }
 .nutritional .table tr td {
     padding: 5px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border: none;
     color: #655656;
 }
@@ -1276,12 +1339,20 @@ hr {
   padding-right: 60px;
 }
 .tblCounter > a {
-  padding: 9px 23px;
+  padding: 9px 17px;
   display: block;
   font-size: 12px;
   background: #F2F7FF;
   box-shadow: -10px 0px 18px 8px #FFFFFF;
   border-radius: 30px;
+}
+.tblCounter > a > span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+.tblCounter > a > span + span {
+  margin-left: 5px;
 }
 .tblCounter {
   position: absolute;
@@ -1322,6 +1393,72 @@ hr {
   z-index: 1;
 }
 
+/*********************************/
+
+.headerSection {
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  z-index: 3;
+  
+}
+.headerSection.fixedHeader {
+  padding: 8px 0;
+  -webkit-box-shadow: 0 6px 20px rgb(0 0 0 / 6%);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 6%);
+}
+.spaceTopCol {
+  margin-top: 70px;
+}
+
+/*********************************/
+
+.cs1ContentCol {
+  padding-right: 10px;
+}
+.vegIcon, .orderCustomIcon {
+  margin-left: 20px;
+}
+.vegIcon > img {
+  width: 25px;
+}
+.orderCustomIcon > ul > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.orderCustomIcon > ul > li + li {
+  margin-left: 5px;
+}
+.orderSelectMainCol {
+  padding-top: 5px;
+}
+.cardStyle1.active {
+  border-color: #F45D38;
+  overflow: hidden;
+  position: relative;
+}
+.addItemsInd {
+  position: absolute;
+  right: -6px;
+  bottom: 0;
+  background-color: #F45D38;
+  font-weight: 500;
+  color: #fff;
+  font-size: 11px;
+  padding: 0px 16px;
+  border-radius: 50px 0 50px 0;
+}
+.xlBtn > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 /*******************************
 ****** MEDIA-QAUARY START ******
@@ -1345,7 +1482,7 @@ hr {
     font-size: 18px;
   }
 }
-@media (max-width:375px) {
+@media (max-width:385px) {
   .proImgCol {
     width: 100px;
   }
@@ -1353,12 +1490,24 @@ hr {
     height: 100px;
   }
   .proBtmBtnCol .btn {
-    min-width: 80px;
-    padding: 6px 15px 8px;
+    min-width: 70px;
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+  .iconBtn > span > img {
+    width: 10px;
+  }
+  .vegIcon > img {
+    width: 20px;
   }
   .cardProtitle {
     font-size: 14px;
-    margin-bottom: 5px;
+  }
+  .orderCustomIcon > ul > li > img {
+    height: 20px;
+  }
+  .proBtmBtnCol {
+    margin-top: -15px;
   }
   .proPrice {
     font-size: 18px;
@@ -1505,7 +1654,7 @@ hr {
   .mdlBtn .btn {
     padding: 15px 10px;
   }
-  .signleOrderMainCol {
+  .singleOrderMainCol {
     margin-top: 15px;
   }
   .orderDetailCol {
@@ -1523,6 +1672,14 @@ hr {
   .emailIcon {
     left: 22px;
     top: 21px;
+  }
+  .proImgCol {
+    width: 100px;
+  }
+  .xlBtn {
+    min-width: 260px;
+    padding: 15px;
+    font-size: 18px;
   }
 }
 
