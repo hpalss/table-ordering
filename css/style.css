@@ -219,7 +219,7 @@ a:hover, a:focus, .btn:focus {
 }
 .topLinksCol {
   overflow: hidden;
-  padding: 5px 5px 0;
+  padding: 0 5px 0;
 }
 .topLinksSwiper .swiper-slide {
   width: auto;
@@ -237,7 +237,7 @@ a:hover, a:focus, .btn:focus {
   border-bottom: 1px solid #ECECEC;
 }
 .topLink {
-  padding: 12px 0;
+  padding: 5px 0;
   display: inline-block;
   color: #9696A8;
   font-size: 13px;
@@ -298,9 +298,9 @@ a:hover, a:focus, .btn:focus {
   opacity: 0;
 }
 .tabSectionMain {
-  padding: 118px 0 15px;
-  position: relative;
-  z-index: 2;
+    padding: 100px 0 10px;
+    position: relative;
+    z-index: 2;
 }
 .tabStyle .nav-tabs {
   border-bottom: 1px solid #EAF2FF;
@@ -309,9 +309,9 @@ a:hover, a:focus, .btn:focus {
   margin-bottom: 0;
 }
 .tabStyle .nav-tabs .nav-link {
-  padding: 6px 25px;
-  font-size: 12px;
-  color: var(--blackColor)
+    padding: 5px 20px;
+    font-size: 12px;
+    color: var(--blackColor);
 }
 .tabStyle .nav-tabs .nav-item.show .nav-link, .tabStyle .nav-tabs .nav-link.active {
   background-color: #F2F7FF;
@@ -319,7 +319,7 @@ a:hover, a:focus, .btn:focus {
   font-weight: var(--bold);
 }
 .tabStyle .tab-content {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 .cardStyle1 {
   border: 1px solid #EAF2FF;
@@ -328,14 +328,14 @@ a:hover, a:focus, .btn:focus {
   background-color: #fff;
 }
 .proImgCol {
-  width: 114px;
+  width: 96px;
 }
 .cs1ImgCol img {
   width: 100%;
-  height: 126px;
+  height: 96px;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .proBtmBtnCol {
   text-align: center;
@@ -343,9 +343,12 @@ a:hover, a:focus, .btn:focus {
   margin-top: -20px;
 }
 .proBtmBtnCol .btn {
-  min-width: 82px;
-  padding: 10px 10px;
-  border-radius: 10px;
+    min-width: 70px;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+.iconBtn > span > img {
+    width: 11px;
 }
 .btn {
   padding: 8px 20px 10px;
@@ -402,7 +405,7 @@ a:hover, a:focus, .btn:focus {
   padding-top: 8px;
 }
 .cardProtitle {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: var(--bold);
   margin-bottom: 0;
 }
@@ -413,11 +416,11 @@ a:hover, a:focus, .btn:focus {
   color: #324AA2;
 }
 .proPrice {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: var(--bold);
 }
 .cs1ContentCol, .proRightIconsCol {
-  padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 .proOptionsList > ul > li > img {
   width: 18px;
@@ -436,7 +439,7 @@ a:hover, a:focus, .btn:focus {
   padding-bottom: 60px;
 }
 .cards > .cardStyle1 + .cardStyle1 {
-  margin-top: 9px;
+  margin-top: 5px;
 }
 .cartPrice {
   font-size: 18px;
@@ -457,14 +460,14 @@ a:hover, a:focus, .btn:focus {
   bottom: 0;
 }
 .floatingCart {
-  padding: 20px 30px;
+  padding: 15px 20px;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 40px 40px 0 0;
+  border-radius: 30px 30px 0 0;
 }
 .ocHeader {
   width: 100%;
@@ -505,7 +508,7 @@ a:hover, a:focus, .btn:focus {
   padding: 2px 0 4px;
 }
 .cartProImgCol {
-  width: 85px;
+  width: 75px;
   margin-right: 5px;
   display: -webkit-flex;
   display: -ms-flex;
@@ -516,13 +519,13 @@ a:hover, a:focus, .btn:focus {
 }
 .cartProImgCol > img {
   max-width: 100%;
-  max-height: 98px;
+  max-height: 80px;
   -o-object-fit: contain;
   object-fit: contain;
-  border-radius: 17px;
+  border-radius: 12px;
 }
 .cartItem {
-  padding: 15px 0;
+  padding: 10px 0;
   position: relative;
 }
 .cartItem::before {
@@ -539,29 +542,33 @@ a:hover, a:focus, .btn:focus {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf2ff', endColorstr='#eaf2ff',GradientType=1 );
 }
 .quantityField {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-  width: 135px;
-  height: 45px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+}
+
+.quantityField .qtyBtn > img {
+    width: 15px;
 }
 .qtyBtn {
-  border: 1px solid #EAF2FF;
-  margin: 0px;
-  width: 45px;
-  height: 100%;
-  background: var(--bs-white);
-  outline: none;
-  cursor: pointer;
-  border-radius: 15px;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: center;
+    border: 1px solid #EAF2FF;
+    margin: 0px;
+    width: 35px;
+    height: 100%;
+    background: var(--bs-white);
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
 }
 .qty {
   width: calc(100% - 90px);
@@ -692,7 +699,7 @@ a:hover, a:focus, .btn:focus {
   border-radius: 30px;
 }
 .sProContent {
-  padding: 25px 0;
+  padding: 20px 0;
 }
 .sProInfo h4 {
   font-size: 22px;
@@ -728,8 +735,8 @@ a:hover, a:focus, .btn:focus {
 }
 .sProInfo {
   border-bottom: 1px solid #EAF2FF;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 .mdTitle {
   font-size: 16px;
@@ -1174,7 +1181,7 @@ hr {
     -o-transition: border-color 300ms ease-in-out 0s;
     transition: border-color 300ms ease-in-out 0s;
     width: 120px;
-    height: 40px;
+    height: 35px;
 }
 .proDetailQty .quantityField.vRed {
   border-color: #FD8B70;
@@ -1183,7 +1190,7 @@ hr {
   border-color: #219653;
 }
 .proDetailMainCol {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -1191,7 +1198,7 @@ hr {
     position: relative;
 }
 .sizeSelector .radio + .radio {
-    margin-top: 8px;
+    margin-top: 5px;
 }
 .sizeSelector label.radio-label {
     padding-left: 26px;
@@ -1339,7 +1346,7 @@ hr {
   padding-right: 60px;
 }
 .tblCounter > a {
-  padding: 9px 17px;
+  padding: 8px 16px;
   display: block;
   font-size: 12px;
   background: #F2F7FF;
@@ -1420,17 +1427,22 @@ hr {
 /*********************************/
 
 .cs1ContentCol {
-  padding-right: 10px;
+    padding-right: 5px;
 }
 .vegIcon, .orderCustomIcon {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .vegIcon > img {
-  width: 25px;
+    width: 15px;
 }
 .orderCustomIcon > ul > li {
   display: inline-block;
   vertical-align: middle;
+}
+.orderCustomIcon > ul > li > img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 .orderCustomIcon > ul > li + li {
   margin-left: 5px;
@@ -1482,35 +1494,49 @@ hr {
     font-size: 18px;
   }
 }
+@media (max-width:485px) {
+  .floatingCart {
+    padding: 10px 15px;
+    border-radius: 20px 20px 0 0;
+  }
+  .cards > .cardStyle1 + .cardStyle1 {
+    margin-top: 7px;
+  }
+}
 @media (max-width:385px) {
-  .proImgCol {
-    width: 100px;
-  }
-  .cs1ImgCol img {
-    height: 100px;
-  }
-  .proBtmBtnCol .btn {
-    min-width: 70px;
-    padding: 5px 10px;
+.proBtmBtnCol .btn {
+    min-width: 55px;
+    padding: 4px 8px;
     border-radius: 6px;
+    font-size: 12px;
   }
-  .iconBtn > span > img {
-    width: 10px;
-  }
-  .vegIcon > img {
-    width: 20px;
+ .iconBtn > span > img {
+    width: 9px;
   }
   .cardProtitle {
     font-size: 14px;
   }
   .orderCustomIcon > ul > li > img {
-    height: 20px;
+    height: 15px;
+    width: 15px;
+  }
+  .proOptionsList > ul > li > img {
+    width: 15px;
   }
   .proBtmBtnCol {
     margin-top: -15px;
   }
   .proPrice {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .proImgCol {
+    width: 85px;
+  }
+  .orderCustomIcon > ul > li + li {
+    margin-left: 3px;
+  }
+  .cs1ImgCol img {
+    height: 90px;
   }
   .proRightIconsCol {
     width: 30px;
@@ -1527,7 +1553,7 @@ hr {
     font-size: 16px;
   }
   .priceLgText {
-    font-size: 20px;
+    font-size: 18px;
   }
   .cartProImgCol {
     width: 60px;
@@ -1550,7 +1576,7 @@ hr {
     height: 180px;
   }
   .sProLgImg {
-    height: 260px;
+    height: 250px;
     border-radius: 15px;
   }
   .spCloseTrigger {
@@ -1578,13 +1604,6 @@ hr {
     width: 30px;
     height: 30px;
     border-radius: 6px;
-  }
-  .cartProImgCol {
-    width: 80px;
-  }
-  .cartProImgCol > img {
-    max-height: 90px;
-    border-radius: 12px;
   }
   .pProTitle, .pPrice {
     font-size: 14px;
@@ -1673,13 +1692,19 @@ hr {
     left: 22px;
     top: 21px;
   }
-  .proImgCol {
-    width: 100px;
-  }
   .xlBtn {
     min-width: 260px;
     padding: 15px;
     font-size: 18px;
+  }
+  .addItemsInd {
+    font-size: 10px;
+  }
+  .qpText {
+    font-size: 13px;
+  }
+  .cartProtitle {
+    font-size: 15px;
   }
 }
 
